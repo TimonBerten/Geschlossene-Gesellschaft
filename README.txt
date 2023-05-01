@@ -1,0 +1,1 @@
+Dies ist ein Test für ein git der geschlossenen Gesleschaft 
