@@ -19,11 +19,10 @@ lsim(sys_G, u, t);
 
 grid;
 
-%Hnadische berechnung für Winkel und verschiebung
-Ampl = 2;
-del_t = -(29.8 - 28.3);
+%A = 2;
+delt = -(29.8 - 28.3);
 
-phi = w * del_t;  
+phi = w * delt;  
 
 A = freqresp(sys_G, j*w);
 B = abs(A);
@@ -39,12 +38,3 @@ figure
 bode(sys_G)
 grid
 
-
-%Nyquist-Diagramm
-
-figure
-nyquist(sys_G)
-axis equal
-hold on 
-plot(A, 'r*')
-grid
